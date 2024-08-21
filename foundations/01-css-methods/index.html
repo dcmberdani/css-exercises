@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methods for Adding CSS</title>
+
+
+    <!-- Added Stelysheet below -->
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Stylesheet added above -->
+
+
+    <!-- Adding the Inline Style Below -->
+    <style>
+      p {
+        color: white;
+        background-color: green;
+        font-size: 18px;
+      }
+    </style>
+    <!-- Adding the Inline Style Above -->
   </head>
   <body>
     <div>Style me via the external method!</div>
     <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
+    
+    <!-- For inline, just add the "style" property???
+     I forget the actual name gimme a sec 
+     "Attribute", we add the style 'attribute'-->
+    <button style="background-color: orange; font-size: 18px;">Inline Method</button>
   </body>
 </html>
