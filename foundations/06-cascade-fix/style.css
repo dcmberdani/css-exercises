@@ -2,22 +2,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* This selects the "OR", bolding both and setting color black*/
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
+/* This is being overwritten by the para; So, let's have smallpara be an 'and'
+combinator since it seems to only be used with the para class */
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
+/* This sets all paras to have the same font size*/
 .para {
   font-size: 22px;
 }
 
-.confirm {
+
+/* Looks like we can choose either to use the ID, or both the confirm + button classes
+I'll intentionally use the AND since that might be more useful later if we have
+more green buttons */
+.confirm.button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +37,12 @@ body {
   font-size: 20px;
 }
 
-.child {
+/* We should probably use a descendent combinator in order to alter this child
+Since it, ofc, is a child class descendent of a div, and that'll have specific
+properties that we want.  
+I chose a child of the text class div; If we chose a div, then the below rule
+would still override it*/
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
