@@ -1,0 +1,10 @@
+
+/* Let's do p-type children of containter-class items */
+/* To grab children, do "parent child", with the space I BELIEVE */
+
+.container p {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
