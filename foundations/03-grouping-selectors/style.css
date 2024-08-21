@@ -1,0 +1,16 @@
+/* Don't make a separate class for shared properties */
+/* Instead, just use the "OR" selector, i.e. comma + newline, to share properties */
+.black,
+.yellow {
+    font-size: 28px;
+    font-family: 'Helvetica', 'Times New Roman', sans-serif;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
